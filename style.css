@@ -1,0 +1,106 @@
+/* global styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Space Mono', monospace;
+
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* header styles */
+.header-content {
+    width: 60%;
+    height: 5rem;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    z-index: 3;
+    padding: 0 2rem ;
+    background-color: #fff;
+}
+
+.header-content nav a {
+    margin-left: 4rem;
+
+}
+
+/* main section styles */
+
+.main-section {
+    width: 60%;
+    height: calc(100% - 5rem);
+    margin:auto;
+    display: flex;
+}
+.main-content {
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    display: flex;
+}
+
+.main {
+    align-self: center;
+    flex: 1 50%;
+}
+.main-image {
+    height: 100%;
+    background: url(http://rebeccastonehill.com/wp-content/uploads/tumblr_lkji60HRpr1qdqgr4o1_400.jpg) center center / cover  no-repeat;
+    position: relative;
+    z-index: -1;
+    top: -2rem;
+    right: 0;
+}
+
+.main-summary-title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+    width: 80%;
+}
+
+.main-summary-description {
+    font-size: 1rem;
+    font-weight: 400;
+    color:#444;
+    margin-bottom:1rem; 
+    width: 80%;
+}
+
+.main-summary input {
+    width: 16rem;
+    height: 2rem;
+    padding: 0 .5rem;
+    font-family: 'Space Mono', monospace;
+    border: 1px solid #000;
+}
+
+.main-summary button {
+    width: 6rem;
+    height: 2.125rem;
+    font-family: 'Space Mono', monospace;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #000;
+ }
+
+ .sign-up-form {
+     display: flex;
+     justify-content: flex-start;
+     margin-bottom: 1rem;
+ }
