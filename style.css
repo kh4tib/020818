@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+::selection {
+    background-color: #ef3340;
+}
+
 html,
 body {
     height: 100%;
@@ -35,6 +39,19 @@ a {
 
 .header-content nav a {
     margin-left: 4rem;
+
+}
+
+.header-content nav a:first-child {
+    font-weight: 700;
+    border-bottom: 3px solid #000;
+    transition: 100ms ease-in-out;
+
+}
+
+.header-content nav a:hover {
+    padding-bottom: .25rem;
+    
 
 }
 
@@ -90,6 +107,11 @@ a {
     border: 1px solid #000;
 }
 
+.main-summary input:active,
+.main-summary input:focus {
+    outline: none;
+}
+
 .main-summary button {
     width: 6rem;
     height: 2.125rem;
@@ -97,6 +119,16 @@ a {
     color: #fff;
     background-color: #000;
     border: 1px solid #000;
+    cursor: pointer;
+    transition: 100ms ease-in-out;
+ }
+
+ .main-summary button:hover {
+     background-color: #fff;
+     color: #000;
+     border: 1px solid #000;
+     font-weight: 700;
+     outline: none;
  }
 
  .sign-up-form {
@@ -104,3 +136,26 @@ a {
      justify-content: flex-start;
      margin-bottom: 1rem;
  }
+
+ @media only screen and (max-width: 1024px) {
+    .main-image,
+    nav {
+        display:none;
+    }
+
+    .header-content {
+        justify-content: center;
+    }
+
+    .main-summary,
+    .main-summary-description,
+    .main-summary-title {
+        width: 100%;
+        text-align: center;    
+    }
+
+    .sign-up-form {
+        justify-content: center; 
+    }
+    
+}
